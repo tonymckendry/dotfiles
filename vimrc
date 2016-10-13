@@ -17,11 +17,26 @@ Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'tpope/vim-fugitive'
 
+Plugin 'chrisbra/Colorizer'
+
+Plugin 'pangloss/vim-javascript'
+
+Plugin 'mxw/vim-jsx'
+
+Plugin 'NLKNguyen/papercolor-theme'
+
+Plugin 'mattn/emmet-vim'
+
+Plugin 'spf13/vim-autoclose'
+
 filetype plugin indent on
 
 set number
 syntax enable
-colorscheme sift
+set background=dark
+colorscheme PaperColor
+
+set cursorline
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
@@ -29,9 +44,15 @@ noremap <Left> <NOP>
 noremap <Right> <NOP>
 
 let g:crtlp_map = '<c-p>'
-let g:airline#extensions#tabline#enabled = 1
+let mapleader=","
+let g:airline#extensions#tabline#enabled=1
 let g:airline_theme='bubblegum'
+let g:colorizer_auto_color=1
+let g:autoclose_on=1
 
 set laststatus=2
 
 let g:airline_powerline_fonts = 1
+
+map <Leader>w <C-W>w
+map <Leader><Tab> <C-y>,
