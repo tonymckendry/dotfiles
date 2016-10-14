@@ -29,13 +29,15 @@ Plugin 'mattn/emmet-vim'
 
 Plugin 'spf13/vim-autoclose'
 
+Plugin 'Yggdroot/indentLine'
+
 filetype plugin indent on
 
 set number
 syntax enable
 set background=dark
 colorscheme PaperColor
-
+set nowrap
 set cursorline
 
 noremap <Up> <NOP>
@@ -49,6 +51,7 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline_theme='bubblegum'
 let g:colorizer_startup=1
 let g:autoclose_on=1
+let g:indentLine_enabled=1
 
 set laststatus=2
 
