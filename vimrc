@@ -17,7 +17,7 @@ Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'tpope/vim-fugitive'
 
-Plugin 'chrisbra/Colorizer'
+Plugin 'lilydjwg/colorizer'
 
 Plugin 'pangloss/vim-javascript'
 
@@ -47,7 +47,7 @@ let g:crtlp_map = '<c-p>'
 let mapleader=","
 let g:airline#extensions#tabline#enabled=1
 let g:airline_theme='bubblegum'
-let g:colorizer_auto_color=1
+let g:colorizer_startup=1
 let g:autoclose_on=1
 
 set laststatus=2
@@ -56,3 +56,5 @@ let g:airline_powerline_fonts = 1
 
 map <Leader>w <C-W>w
 map <Leader><Tab> <C-y>,
+map <Leader>H <C-W>s
+map <Leader>V <C-W>v
